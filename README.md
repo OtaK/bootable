@@ -15,7 +15,7 @@ application will be ready to run.
 
 ## Install
 
-    $ npm install bootable
+    $ npm install @viadeo-fcms/bootable
 
 ## Usage
 
@@ -49,6 +49,19 @@ Bootable packages phases for these common scenarios:
 ```javascript
 app.phase(bootable.initializers('config/initializers'));
 app.phase(bootable.routes('routes.js'));
+```
+
+In app.js:
+
+```javascript
+app.phase(bootable.initializers([__dirname + '/config/initializers/common', __dirname + '/config/initializers/web']));
+app.phase(maglev.boot.routes(__dirname + '/config/routes/web'));
+```
+
+In app-mobile.js:
+
+```javascript
+app.phase(bootable.initializers([__dirname + '/config/initializers/common']));
 ```
 
 Custom phases can be registered as well, and come in synchronous and
