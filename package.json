@@ -1,8 +1,8 @@
 {
-  "name": "@viadeo-fcms/bootable",
+  "name": "@otak/bootable",
   "version": "0.4.1",
   "description": "Easy application initialization for Node.js.",
-  "homepage": "https://github.com/viadeo/bootable",
+  "homepage": "https://github.com/OtaK/bootable",
   "keywords": [
     "boot",
     "init",
