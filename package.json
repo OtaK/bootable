@@ -30,12 +30,12 @@
   "main": "./lib",
   "dependencies": {
     "bootable-di": "github:OtaK/bootable-di",
-    "scripts": "0.1.0",
-    "debug": "3.1.0"
+    "debug": "3.1.0",
+    "scripts": "0.1.0"
   },
   "devDependencies": {
-    "mocha": "2.3.4",
-    "chai": "3.5.0"
+    "mocha": "5.x.x",
+    "chai": "4.x.x"
   },
   "engines": {
     "node": "8.9.4"
